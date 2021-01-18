@@ -1,0 +1,38 @@
+@import "./variables.scss";
+
+.nav-multi {
+  &__normal {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    text-decoration: none;
+    color: $dark-color;
+    cursor: pointer;
+    height: 54px;
+    transition: $transition;
+
+    &--icon {
+      background: transparent;
+      font-size: $font-bigger;
+      border: none;
+      cursor: pointer;
+      color: $dark-color;
+    }
+
+    &:hover {
+      color: black;
+      background: $base-color;
+    }
+  }
+
+  &--list {
+    max-height: 0;
+    overflow: hidden;
+    list-style-type: none;
+    transition: $transition;
+  }
+}
+
+.active-item {
+  max-height: 108px;
+}

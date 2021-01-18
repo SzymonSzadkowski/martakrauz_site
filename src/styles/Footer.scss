@@ -1,0 +1,59 @@
+@import "./variables.scss";
+
+.footer {
+  display: grid;
+  grid-template-areas:
+    "list social"
+    "local local"
+    "rights rights"
+    "author author";
+  align-items: center;
+  padding: 20px;
+  margin: 10px auto 0;
+  max-width: 600px;
+  color: $dark-color;
+  &--list {
+    margin: 0 auto;
+    grid-area: list;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+
+    &--item {
+      text-decoration: none;
+      font-size: $font-small;
+      color: $dark-color;
+      padding: 2px;
+      transition: $transition;
+
+      &:hover {
+        color: black;
+      }
+    }
+  }
+
+  &--local {
+    grid-area: local;
+    font-size: $font-small;
+    text-align: center;
+    padding: 5px;
+  }
+
+  &--rights {
+    grid-area: rights;
+    font-size: $font-smaller;
+    text-align: center;
+  }
+
+  &--author {
+    grid-area: author;
+    font-size: $font-smaller;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .footer {
+    max-width: 700px;
+  }
+}

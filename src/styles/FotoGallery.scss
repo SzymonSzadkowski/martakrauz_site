@@ -1,0 +1,34 @@
+@import "./variables";
+.foto-gallery {
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  width: 90%;
+  max-width: 400px;
+  transition: $transition;
+
+  &--image {
+    max-width: 100%;
+    border-radius: 0.2rem;
+    margin: 5px auto;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .foto-gallery {
+    max-width: 550px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    &--image {
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .foto-gallery {
+    max-width: 900px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,0 +1,40 @@
+@import "./_variables.scss";
+
+.nav--social {
+  display: flex;
+  width: 100px;
+  margin: 30px auto;
+  justify-content: space-between;
+
+  &--btn {
+    background: transparent;
+    border-radius: 0.2rem;
+    border: none;
+    margin: 0 5px;
+    font-size: $font-bigger;
+    opacity: 0.9;
+    cursor: pointer;
+    transition: $transition;
+
+    &:hover {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+  }
+}
+
+.fb:hover {
+  color: blue;
+}
+
+.insta:hover {
+  color: darkorange;
+}
+
+.youtube:hover {
+  color: red;
+}
+
+.mail:hover {
+  color: rgb(153, 78, 78);
+}

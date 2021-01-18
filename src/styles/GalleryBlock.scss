@@ -1,0 +1,60 @@
+@import "./variables.scss";
+
+.gallery-block {
+  display: grid;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 15px;
+  color: $dark-color;
+  max-width: 320px;
+  background: $forth-color;
+  height: 650px;
+  transition: $transition;
+  &--image {
+    width: 100%;
+    border-radius: 0.2rem;
+  }
+
+  &--textfield {
+    margin: 10px 0 5px;
+    text-align: center;
+    text-decoration: none;
+
+    &--title {
+      margin-bottom: 5px;
+    }
+  }
+
+  &--link {
+    margin: 5px 0;
+    text-decoration: none;
+    justify-self: center;
+  }
+  &--btn {
+    margin: 0 auto;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 0.2rem;
+    text-transform: uppercase;
+    font-size: $font-medium;
+    border: 2px solid lighten($color: $dark-color, $amount: 20);
+    cursor: pointer;
+    transition: $transition;
+
+    &:hover {
+      color: black;
+      background: darken($base-color, 10);
+    }
+  }
+
+  &:hover {
+    color: darken($dark-color, 10);
+    background: darken($color: $forth-color, $amount: 5);
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .gallery-block {
+    margin: 5px;
+  }
+}

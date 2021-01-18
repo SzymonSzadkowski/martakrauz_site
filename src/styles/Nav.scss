@@ -1,0 +1,85 @@
+@import "./variables.scss";
+
+.nav {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  overflow-x: hidden;
+  opacity: 0;
+  z-index: 1;
+  background: $second-color;
+  transition: $transition;
+  padding: 5rem 0;
+  color: $dark-color;
+
+  &--link {
+    text-decoration: none;
+    padding: 10px;
+    font-size: $font-big;
+  }
+
+  &--social {
+    display: flex;
+    width: 100px;
+    margin: 30px auto;
+    justify-content: space-between;
+
+    &--btn {
+      background: $forth-color;
+      border-radius: 0.2rem;
+      border: none;
+      color: $dark-color;
+      font-size: $font-bigger;
+      opacity: 0.9;
+      cursor: pointer;
+      transition: $transition;
+
+      &:hover {
+        transform: scale(1.1);
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.active {
+  width: 100%;
+  opacity: 0.95;
+}
+
+.fb:hover {
+  color: blue;
+}
+
+.insta:hover {
+  color: darkorange;
+}
+
+.mail:hover {
+  color: rgb(153, 78, 78);
+}
+
+@media screen and (min-width: 750px) {
+  .active {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .nav {
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+    opacity: 1;
+    padding: 0;
+    background: transparent;
+
+    & > :last-child {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,80 @@
+@import "./variables.scss";
+
+.contact {
+  padding: 20px;
+  margin: 15px auto;
+  display: flex;
+  flex-direction: column;
+  background: $forth-color;
+  min-width: 300px;
+  max-width: 400px;
+  transition: $transition;
+  &--title {
+    margin: 0 auto 10px;
+  }
+
+  &--name,
+  &--email,
+  &--message {
+    background: lighten($second-color, 20);
+    margin-bottom: 5px;
+    font-size: $font-medium;
+    border-radius: 0.2rem;
+    padding: 2px;
+    border: 1px solid rgba(128, 128, 128, 0.1);
+  }
+
+  &--btn {
+    margin: 1rem 2rem 0;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 0.2rem;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    border: 2px solid lighten($color: $dark-color, $amount: 20);
+    cursor: pointer;
+    transition: $transition;
+
+    &:hover {
+      color: black;
+      background: darken($base-color, 10);
+    }
+  }
+
+  &--mailto {
+    font-size: $font-medium;
+    color: $dark-color;
+    text-align: center;
+    text-decoration: none;
+
+    &--email {
+      color: $dark-color;
+      text-decoration: underline;
+    }
+  }
+  &--insta {
+    font-size: $font-medium;
+    color: $dark-color;
+    text-align: center;
+    text-decoration: none;
+
+    &--direct {
+      color: $dark-color;
+      text-decoration: underline;
+    }
+  }
+
+  &:hover {
+    background: darken($color: $forth-color, $amount: 5);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .contact {
+    max-width: 500px;
+
+    &--btn {
+      margin: 1rem 7rem 0;
+    }
+  }
+}

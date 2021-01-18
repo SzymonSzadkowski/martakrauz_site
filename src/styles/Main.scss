@@ -1,0 +1,8 @@
+@import "./variables.scss";
+
+.main {
+  display: grid;
+  justify-content: center;
+  margin-top: 2rem;
+  row-gap: 2rem;
+}

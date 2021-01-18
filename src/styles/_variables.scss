@@ -1,0 +1,32 @@
+$base-color: #ffe2e2;
+$second-color: #f3dddd;
+$third-color: #ffc7c7;
+$forth-color: #facfcf9d;
+$dark-color: #555555;
+$transition: all 0.4s ease-in-out;
+
+$font-smaller: 0.4rem;
+$font-small: 0.7rem;
+$font-medium: 1rem;
+$font-big: 1.2rem;
+$font-bigger: 1.5rem;
+
+@font-face {
+  font-display: swap;
+  font-family: NothingYouCouldDo;
+  src: url(../../public/fonts/NothingYouCouldDo-Regular.ttf);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: CormorantUpright;
+  src: url(../../public/fonts/CormorantUpright-Regular.ttf);
+}
+
+@media screen and (min-width: 410px) {
+  $font-smaller: 0.4rem;
+  $font-small: 0.7rem;
+  $font-medium: 1rem;
+  $font-big: 1.2rem;
+  $font-bigger: 1.5rem;
+}

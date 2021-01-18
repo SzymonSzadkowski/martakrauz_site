@@ -1,0 +1,32 @@
+@import "./variables.scss";
+
+.about {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  text-align: center;
+  color: $dark-color;
+  max-width: 400px;
+  margin: 0 auto;
+  transition: $transition;
+
+  &--head {
+    font-size: $font-bigger;
+    margin-bottom: 5px;
+  }
+
+  &--body {
+    font-size: $font-big;
+  }
+
+  &:hover {
+    color: black;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .about {
+    max-width: 600px;
+  }
+}

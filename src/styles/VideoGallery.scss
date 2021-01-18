@@ -1,0 +1,42 @@
+@import "./variables";
+.video-gallery {
+  display: flex;
+  flex-direction: column;
+  margin: 15px auto;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  justify-content: center;
+  background: $forth-color;
+  padding: 10px;
+  transition: $transition;
+
+  &--box {
+    width: 100%;
+
+    &--title {
+      color: $dark-color;
+      text-transform: capitalize;
+      margin: 5px 0;
+    }
+
+    &--video {
+      width: 100%;
+      height: 40vw;
+      max-height: 500px;
+      margin: 10px 0;
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .video-gallery {
+    max-width: 600px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .video-gallery {
+    max-width: 900px;
+  }
+}

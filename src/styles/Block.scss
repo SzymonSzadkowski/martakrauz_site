@@ -1,0 +1,26 @@
+@import "./variables.scss";
+
+.block {
+  position: relative;
+  margin: 10px auto;
+  width: 100%;
+  text-align: center;
+
+  &--img {
+    width: 100%;
+    max-width: 900px;
+    border-radius: 0.2rem;
+  }
+
+  &--title {
+    color: $second-color;
+    font-weight: 900;
+    opacity: 0.9;
+    display: block;
+    position: absolute;
+    width: 100%;
+    padding: 20px;
+    bottom: 5px;
+    background: linear-gradient(transparent, $dark-color);
+  }
+}

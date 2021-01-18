@@ -1,0 +1,9 @@
+@import "./variables";
+
+.foto-gallery-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: $dark-color;
+  margin: 2rem 0;
+}
